@@ -60,7 +60,7 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('11.avif');
 scene.background = spaceTexture;
 
 // Avatar
@@ -102,7 +102,7 @@ function moveCamera() {
 
   vera.rotation.y += 0.01;
   vera.rotation.z += 0.01;
-
+ 
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
   camera.rotation.y = t * -0.0002;

@@ -7,7 +7,7 @@ canvas {
   background-size: cover;
 }
 
-body{
+body {
   overflow-x: hidden;
   background-size: cover;
   background-image: url(./11.avif);
@@ -91,11 +91,26 @@ blockquote p {
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+
+  }
+
+  header {
+    background: var(--dark-bg);
+    /* grid-column: 2 / span 5; */
+    font-size: 25px ;
+    padding: 2rem;
+    /* margin-left: 4px;
+    margin-right: 4px; */
+    margin-bottom: var(--spacing);
+  }
+
   main {
     padding: 80px 20px;
     /* Adjust padding for smaller screens */
     overflow-x: hidden;
-background-size: cover;
+    background-size: cover;
 
   }
 
@@ -111,9 +126,17 @@ background-size: cover;
 
   blockquote {
     grid-column: 1 / span 12;
+    font-size: 25px ;
+
     /* Full width for blockquote on mobile */
   }
-
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 25px;
+    display: inline;
+    line-height: 1;
+  }
   .left {
     grid-column: 1 / span 12;
     /* Full width for .left on mobile */
